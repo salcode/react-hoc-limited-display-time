@@ -1,5 +1,6 @@
 import './App.css';
 import { useReducer } from 'react';
+import Notification from './components/Notification.js';
 import reducer from './reducer.js';
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>
-          Enter Announcement in the Text Field
+          Enter Notification in the Text Field
         </p>
       </header>
 
@@ -22,6 +23,8 @@ function App() {
       />
 
       <div>{state.myValue ?? ''}</div>
+
+      <Notification />
     </div>
   );
 }
