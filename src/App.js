@@ -20,6 +20,8 @@ function App() {
           })
         }
       />
+
+      <div>{state.myValue ?? ''}</div>
     </div>
   );
 }
