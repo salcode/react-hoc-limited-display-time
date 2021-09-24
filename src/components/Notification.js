@@ -1,9 +1,20 @@
-export default function Notification() {
+
+import PropTypes from 'prop-types';
+
+export default function Notification({message}) {
   return (
     <h2
       className="notification"
     >
-      Example Notification
+      {message}
     </h2>
   );
 }
+
+Notification.propTypes = {
+  message: PropTypes.string,
+};
+
+Notification.defaultProps = {
+  message: '',
+};

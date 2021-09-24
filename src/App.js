@@ -22,9 +22,9 @@ function App() {
         }
       />
 
-      <div>{state.myValue ?? ''}</div>
-
-      <Notification />
+      <Notification
+        message={state.myValue ?? ''}
+      />
     </div>
   );
 }
