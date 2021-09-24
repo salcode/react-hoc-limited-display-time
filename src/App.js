@@ -16,6 +16,10 @@ function App() {
           Learn React
         </a>
       </header>
+
+      <input
+        onChange={e => console.log(e.target.value)}
+      />
     </div>
   );
 }
