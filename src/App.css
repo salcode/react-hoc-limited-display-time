@@ -16,3 +16,9 @@
 .App-link {
   color: #61dafb;
 }
+
+.notification {
+  border: 0.2rem red solid;
+  margin: 2rem;
+  padding: 1rem;
+}
